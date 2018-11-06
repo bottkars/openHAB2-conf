@@ -1,0 +1,22 @@
+sitemap homematic_power label="homematic power items" {
+	Frame label="HM-PSM Steckdose 1 Büro" {
+		Switch item=HM_PSM_outlet_1 icon="poweroutlet"
+		Text item=HM_PSM_Frequency_1 icon="energy"
+		Text item=HM_PSM_Power_1 icon="energy"
+		Text item=HM_PSM_Amperage_1 icon="energy"
+		Text item=HM_PSM_Voltage_1 icon="energy"
+        Text item=HM_PSM_Energy_1 icon="energy"
+	}
+	Frame label="HM-PSM Steckdose Fernseher Küche" {
+		Switch item=HM_PSM_outlet_2 icon="poweroutlet"
+		Text item=HM_PSM_Frequency_2 icon="energy"
+		Text item=HM_PSM_Power_2 icon="energy"
+		Text item=HM_PSM_Amperage_2 icon="energy"
+		Text item=HM_PSM_Voltage_2 icon="energy"
+        Text item=HM_PSM_Energy_2 icon="energy"
+	}    
+	Frame label="Demo group" {
+		Group item=gHM_PSM_1 icon="poweroutlet" label="Steckdose 1 Büro"
+		Group item=gHM_PSM_2 icon="poweroutlet" label="Fernseher Küche"
+	}
+}

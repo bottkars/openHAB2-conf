@@ -1,0 +1,84 @@
+sitemap avm label="AVM items" {
+	Frame label="FRITZ!DECT 210 UV Lampe Schildi´s" {
+		Switch item=Outlet_1 icon="poweroutlet"
+		Text item=Temperature_1 icon="temperature"
+		Text item=Energy_1 icon="energy"
+		Text item=Power_1 icon="energy"
+		Text item=Voltage_1 icon="energy"
+	}
+	Frame label="FRITZ!DECT 200 Espressomaschine" {
+		Switch item=Outlet_2 icon="poweroutlet"
+		Text item=Temperature_2 icon="temperature"
+		Text item=Energy_2 icon="energy"
+		Text item=Power_2 icon="energy"
+		Text item=Voltage_2 icon="energy"
+    }
+	Frame label="FRITZ!DECT 210 Grill" {
+		Switch item=Outlet_3 icon="poweroutlet"
+		Text item=Temperature_3 icon="temperature"
+		Text item=Energy_3 icon="energy"
+		Text item=Power_3 icon="energy"
+		Text item=Voltage_3 icon="energy"
+    }    
+	Frame label="FRITZ!DECT 210 Teichbeleuchtung" {
+		Switch item=Outlet_4 icon="poweroutlet"
+		Text item=Temperature_4 icon="temperature"
+		Text item=Energy_4 icon="energy"
+		Text item=Power_4 icon="energy"
+		Text item=Voltage_4 icon="energy"
+    } 
+Frame label="FRITZ!DECT 210 Laser Terasse" {
+		Switch item=Outlet_5 icon="poweroutlet"
+		Text item=Temperature_5 icon="temperature"
+		Text item=Energy_5 icon="energy"
+		Text item=Power_5 icon="energy"
+		Text item=Voltage_5 icon="energy"
+    } 
+Frame label="FRITZ!DECT 210 UV Klärer/Abscheider" {
+		Switch item=Outlet_6 icon="poweroutlet"
+		Text item=Temperature_6 icon="temperature"
+		Text item=Energy_6 icon="energy"
+		Text item=Power_6 icon="energy"
+		Text item=Voltage_6 icon="energy"
+    } 
+Frame label="FRITZ!DECT 210 Hütte Cruso" {
+		Switch item=Outlet_7 icon="poweroutlet"
+		Text item=Temperature_7 icon="temperature"
+		Text item=Energy_7 icon="energy"
+		Text item=Power_7 icon="energy"
+		Text item=Voltage_7 icon="energy"
+    }   
+ Frame label="FRITZ!DECT 210 Terassenbeleuchtung" {
+		Switch item=Outlet_8 icon="poweroutlet"
+		Text item=Temperature_8 icon="temperature"
+		Text item=Energy_8 icon="energy"
+		Text item=Power_8 icon="energy"
+		Text item=Voltage_8 icon="energy"
+    }  
+Frame label="FRITZ!DECT 210 Heizung Schildis" {
+		Switch item=Outlet_9 icon="poweroutlet"
+		Text item=Temperature_9 icon="temperature"
+		Text item=Energy_9 icon="energy"
+		Text item=Power_9 icon="energy"
+		Text item=Voltage_9 icon="energy"
+    } 
+ Frame label="FRITZ!DECT 210 Bachlauf" {
+		Switch item=Outlet_10 icon="poweroutlet"
+		Text item=Temperature_10 icon="temperature"
+		Text item=Energy_10 icon="energy"
+		Text item=Power_10 icon="energy"
+		Text item=Voltage_10 icon="energy"
+    } 
+	Frame label="Demo group" {
+		Group item=gFritzDect_1 icon="poweroutlet" label="Schildi's"
+        Group item=gFritzDect_2 icon="poweroutlet" label="Espressomachine"
+        Group item=gFritzDect_3 icon="poweroutlet" label="Grill"
+        Group item=gFritzDect_4 icon="poweroutlet" label="Teichbeleuchtung"
+        Group item=gFritzDect_5 icon="poweroutlet" label="Laser Terasse"
+        Group item=gFritzDect_6 icon="poweroutlet" label="UV Klärer/Abscheider"
+        Group item=gFritzDect_7 icon="poweroutlet" label="Hütte Cruso"
+        Group item=gFritzDect_8 icon="poweroutlet" label="Terassenbeleuchtung"
+        Group item=gFritzDect_9 icon="poweroutlet" label="Heizung Schildis"
+        Group item=gFritzDect_10 icon="poweroutlet" label="Bachlaufpumpe"
+	}
+}
