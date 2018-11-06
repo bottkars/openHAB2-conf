@@ -69,6 +69,14 @@ Frame label="FRITZ!DECT 210 Heizung Schildis" {
 		Text item=Power_10 icon="energy"
 		Text item=Voltage_10 icon="energy"
     } 
+	Frame label="FRITZ!DECT 210 Teichpumpe" {
+		Switch item=Outlet_11 icon="poweroutlet"
+		Text item=Temperature_11 icon="temperature"
+		Text item=Energy_11 icon="energy"
+		Text item=Power_11 icon="energy"
+		Text item=Voltage_11 icon="energy"
+    } 
+
 	Frame label="Demo group" {
 		Group item=gFritzDect_1 icon="poweroutlet" label="Schildi's"
         Group item=gFritzDect_2 icon="poweroutlet" label="Espressomachine"
@@ -80,5 +88,7 @@ Frame label="FRITZ!DECT 210 Heizung Schildis" {
         Group item=gFritzDect_8 icon="poweroutlet" label="Terassenbeleuchtung"
         Group item=gFritzDect_9 icon="poweroutlet" label="Heizung Schildis"
         Group item=gFritzDect_10 icon="poweroutlet" label="Bachlaufpumpe"
+				Group item=gFritzDect_11 icon="poweroutlet" label="Teichpumpe"
+
 	}
 }

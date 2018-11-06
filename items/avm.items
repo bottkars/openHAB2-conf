@@ -1,69 +1,78 @@
+//UV Lampe Schildi´s
 Group gFritzDect_1
 Switch Outlet_1 "Switchable outlet" (gFritzDect_1) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570138370:outlet" }
 Number:Temperature Temperature_1 "Current measured temperature [%.1f %unit%]" (gFritzDect_1) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570138370:temperature" }
 Number:Energy Energy_1  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_1) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570138370:energy" }
 Number:Power Power_1 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_1) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570138370:power" }
 Number:ElectricPotential Voltage_1 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_1) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570138370:voltage" }
-
+//Espressomaschine
 Group gFritzDect_2
 Switch Outlet_2 "Switchable outlet" (gFritzDect_2) { channel="avmfritz:FRITZ_DECT_200:192_168_1_1:087610147315:outlet" }
 Number:Temperature Temperature_2 "Current measured temperature [%.1f %unit%]" (gFritzDect_2) { channel="avmfritz:FRITZ_DECT_200:192_168_1_1:087610147315:temperature" }
 Number:Energy Energy_2  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_2) { channel="avmfritz:FRITZ_DECT_200:192_168_1_1:087610147315:energy" }
 Number:Power Power_2 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_2) { channel="avmfritz:FRITZ_DECT_200:192_168_1_1:087610147315:power" }
 Number:ElectricPotential Voltage_2 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_2) { channel="avmfritz:FRITZ_DECT_200:192_168_1_1:087610147315:voltage" }
-
+//Napoleon Grill
 Group gFritzDect_3
 Switch Outlet_3 "Switchable outlet" (gFritzDect_3) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:outlet" }
 Number:Temperature Temperature_3 "Current measured temperature [%.1f %unit%]" (gFritzDect_3) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:temperature" }
 Number:Energy Energy_3  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_3) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:energy" }
 Number:Power Power_3 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_3) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:power" }
 Number:ElectricPotential Voltage_3 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_3) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:voltage" }
-
+//Teichbeleuchtung
 Group gFritzDect_4
 Switch Outlet_4 "Switchable outlet" (gFritzDect_4) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570059762:outlet" }
 Number:Temperature Temperature_4 "Current measured temperature [%.1f %unit%]" (gFritzDect_4) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570059762:temperature" }
 Number:Energy Energy_4  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_4) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570059762:energy" }
 Number:Power Power_4 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_4) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570059762:power" }
 Number:ElectricPotential Voltage_4 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_4) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570059762:voltage" }
-
+//Laser Terasse
 Group gFritzDect_5
 Switch Outlet_5 "Switchable outlet" (gFritzDect_5) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:outlet" }
 Number:Temperature Temperature_5 "Current measured temperature [%.1f %unit%]" (gFritzDect_5) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:temperature" }
 Number:Energy Energy_5  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_5) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:energy" }
 Number:Power Power_5 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_5) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:power" }
 Number:ElectricPotential Voltage_5 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_5) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:voltage" }
-
+//UV Kärer
 Group gFritzDect_6
 Switch Outlet_6 "Switchable outlet" (gFritzDect_6) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570078695:outlet" }
 Number:Temperature Temperature_6 "Current measured temperature [%.1f %unit%]" (gFritzDect_6) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570078695:temperature" }
 Number:Energy Energy_6  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_6) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570078695:energy" }
 Number:Power Power_6 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_6) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570078695:power" }
 Number:ElectricPotential Voltage_6 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_6) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570078695:voltage" }
-
+//Hütte Cruso
 Group gFritzDect_7
 Switch Outlet_7 "Switchable outlet" (gFritzDect_7) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570136588:outlet" }
 Number:Temperature Temperature_7 "Current measured temperature [%.1f %unit%]" (gFritzDect_7) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570136588:temperature" }
 Number:Energy Energy_7  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_7) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570136588:energy" }
 Number:Power Power_7 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_7) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570136588:power" }
 Number:ElectricPotential Voltage_7 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_7) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570136588:voltage" }
-
+//Terassenbeleuchtung
 Group gFritzDect_8
 Switch Outlet_8 "Switchable outlet" (gFritzDect_8) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570041195:outlet" }
 Number:Temperature Temperature_8 "Current measured temperature [%.1f %unit%]" (gFritzDect_8) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570041195:temperature" }
 Number:Energy Energy_8  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_8) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570041195:energy" }
 Number:Power Power_8 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_8) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570041195:power" }
 Number:ElectricPotential Voltage_8 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_8) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570041195:voltage" }
-
+//Heizung Schildi´s
 Group gFritzDect_9
 Switch Outlet_9 "Switchable outlet" (gFritzDect_9) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570079314:outlet" }
 Number:Temperature Temperature_9 "Current measured temperature [%.1f %unit%]" (gFritzDect_9) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570079314:temperature" }
 Number:Energy Energy_9  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_9) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570079314:energy" }
 Number:Power Power_9 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_9) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570079314:power" }
 Number:ElectricPotential Voltage_9 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_9) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570079314:voltage" }
-
+//Bachlauf
 Group gFritzDect_10
 Switch Outlet_10 "Switchable outlet" (gFritzDect_10) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570126712:outlet" }
 Number:Temperature Temperature_10 "Current measured temperature [%.1f %unit%]" (gFritzDect_10) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570126712:temperature" }
 Number:Energy Energy_10  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_10) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570126712:energy" }
 Number:Power Power_10 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_10) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570126712:power" }
 Number:ElectricPotential Voltage_10 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_10) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570126712:voltage" }
+//Filterpumpe
+Group gFritzDect_11
+Switch Outlet_11 "Switchable outlet" (gFritzDect_11) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101884:outlet" }
+Number:Temperature Temperature_11 "Current measured temperature [%.1f %unit%]" (gFritzDect_11) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101884:temperature" }
+Number:Energy Energy_11  "Accumulated energy consumption [%.3f kWh]" <energy> (gFritzDect_11) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101884:energy" }
+Number:Power Power_11 "Current power consumption [%.2f %unit%]" <energy> (gFritzDect_11) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101884:power" }
+Number:ElectricPotential Voltage_11 "Current voltage [%.1f %unit%]"  <energy> (gFritzDect_11) { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101884:voltage" }
+
