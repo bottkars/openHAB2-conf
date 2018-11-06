@@ -1,0 +1,11 @@
+sitemap homematic_swdo label="homematic swdo items" {
+	Frame label="HM-PSWDO Büro" {
+        Text item=HM_SWDO_state_1 icon="energy"
+	}
+	
+	Frame label="Demo group" {
+		Group item=gHM_SWDO_1 icon="window" label="Steckdose 1 Büro"
+
+	
+	}
+}

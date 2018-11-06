@@ -1,0 +1,2 @@
+Group gSWDO_1
+String SWDO_state_1 "Fenster WC [%s]" <window> (gSWDO_1)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905F34:1#STATE"}
