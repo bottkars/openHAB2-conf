@@ -6,7 +6,7 @@ Number:ElectricPotential HM_PSM_Amperage_1 "Current amperage [%.1f mA]"  <energy
 Number:ElectricPotential HM_PSM_Power_1 "Current Power [%.1f W]"  <energy> (gHM_PSM_1) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A6F:6#POWER"}
 Number:ElectricPotential HM_PSM_Frequency_1 "Current Frequency [%.1f Hz]"  <energy> (gHM_PSM_1) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A6F:6#FREQUENCY"}
 Number:ElectricPotential HM_PSM_Energy_1 "Enery Count [%.1f Wh]"  <energy> (gHM_PSM_1) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A6F:6#ENERGY_COUNTER"}
-
+//Fernseher Küche
 Group gHM_PSM_2
 Switch HM_PSM_outlet_2 "Switchable outlet" (gHM_PSM_2) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A7D:3#STATE" }
 Number:ElectricPotential HM_PSM_Voltage_2 "Current voltage [%.1f V]"  <energy> (gHM_PSM_2) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A7D:6#VOLTAGE"}
@@ -22,3 +22,11 @@ Number:ElectricPotential HM_PSM_Amperage_3 "Current amperage [%.1f mA]"  <energy
 Number:ElectricPotential HM_PSM_Power_3 "Current Power [%.1f W]"  <energy> (gHM_PSM_3) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99613A0:6#POWER"}
 Number:ElectricPotential HM_PSM_Frequency_3 "Current Frequency [%.1f Hz]"  <energy> (gHM_PSM_3) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99613A0:6#FREQUENCY"}
 Number:ElectricPotential HM_PSM_Energy_3 "Enery Count [%.1f Wh]"  <energy> (gHM_PSM_3) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99613A0:6#ENERGY_COUNTER"}
+//Drucker Dani
+Group gHM_PSM_4
+Switch HM_PSM_outlet_4 "Switchable outlet" (gHM_PSM_4) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:3#STATE" }
+Number:ElectricPotential HM_PSM_Voltage_4 "Current voltage [%.1f V]"  <energy> (gHM_PSM_4) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:6#VOLTAGE"}
+Number:ElectricPotential HM_PSM_Amperage_4 "Current amperage [%.1f mA]"  <energy> (gHM_PSM_4) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:6#CURRENT"}
+Number:ElectricPotential HM_PSM_Power_4 "Current Power [%.1f W]"  <energy> (gHM_PSM_4) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:6#POWER"}
+Number:ElectricPotential HM_PSM_Frequency_4 "Current Frequency [%.1f Hz]"  <energy> (gHM_PSM_4) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:6#FREQUENCY"}
+Number:ElectricPotential HM_PSM_Energy_4 "Enery Count [%.1f Wh]"  <energy> (gHM_PSM_4) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:6#ENERGY_COUNTER"}

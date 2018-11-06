@@ -13,3 +13,4 @@ Switch Filterpumpe "Filterpumpe" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_
 Switch Office "Büro" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A6F:3#STATE" }
 Switch Television "Fernseher Küche" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A7D:3#STATE" }
 Switch Television1 "Fernseher Schlafzimmer" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99613A0:3#STATE" }
+Switch PrinterDani "Drucker Dani" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:3#STATE" }
