@@ -1,23 +1,30 @@
-sitemap home label="Our Home" {
-    Frame label="Erdgeschoss" icon="groundfloor" {
-        Group item=GF_Basement
-        Group item=GF_Boiler
-    }
+sitemap home label="Dani´s und Karsten´s Home" {
+    Frame label="Erdgeschoss" icon="groundfloor" 
 
-    Frame label="Erster Stock" icon="firstfloor" {
-        Group item=FF_Bedroom
-        Group item=FF_Bathroom
-    }
+    Frame label="Erster Stock" icon="firstfloor" 
+    
 
-    Frame label="Zweiter Stock" icon="attic" {
-        Group item=F2_Balcony
-    }
+    Frame label="Zweiter Stock" icon="attic" 
 
-    Frame {
-        Text label="Steckdose" icon="poweroutlet" {
-            Default item=GF_Boiler_Power label="Heizungsraum"
-            Default item=FF_Bathroom_Power label="Badezimmer"
-	    Default item=Other
-        }
-    }
+    Frame label="Offene Fenster"
+	{
+	Text item=HM_SWDO_state_1  label="Fenster Büro UG" visibility=[HM_SWDO_state_1==OPEN]
+    Text item=HM_SWDO_state_2  label="Fenster Badezimmer 2" visibility=[HM_SWDO_state_2==OPEN]
+    Text item=HM_SWDO_state_3  label="Fenster Arbeitszimmer Dani" visibility=[HM_SWDO_state_3==OPEN]
+    Text item=HM_SWDO_state_4  label="Fenster Badezimmer 1" visibility=[HM_SWDO_state_4==OPEN]
+    Text item=HM_SWDO_state_5  label="Fenster 1 Ankleidezimmer" visibility=[HM_SWDO_state_5==OPEN]
+    Text item=HM_SWDO_state_6  label="Fenster 2 Ankleidezimmer" visibility=[HM_SWDO_state_6==OPEN]
+    Text item=HM_SWDO_state_7  label="Fenster Galerie" visibility=[HM_SWDO_state_7==OPEN]
+    Text item=HM_SWDO_state_8  label="Fenster Küche" visibility=[HM_SWDO_state_8==OPEN]
+    Text item=HM_SWDO_state_9  label="Fenster Speisekammer" visibility=[HM_SWDO_state_9==OPEN]
+    Text item=HM_SWDO_state_10  label="Fenster Wohnzimmer" visibility=[HM_SWDO_state_10==OPEN]
+    Text item=HM_SWDO_state_14  label="Fenster Schlafzimmer links" visibility=[HM_SWDO_state_14==OPEN]
+
+	}
+    Frame label="Offene Türen"
+	{
+    Text item=HM_SWDO_state_11  label="Terassentür Esszimmer" visibility=[HM_SWDO_state_11==OPEN]
+    Text item=HM_SWDO_state_12  label="Terassentür Wohnzimmer" visibility=[HM_SWDO_state_12==OPEN]
+    Text item=HM_SWDO_state_13  label="Terassentür Keller" visibility=[HM_SWDO_state_13==OPEN]
+    }   
 }

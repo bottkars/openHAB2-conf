@@ -1,2 +1,59 @@
-Group gSWDO_1
-String SWDO_state_1 "Fenster WC [%s]" <window> (gSWDO_1)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905F34:1#STATE"}
+//Fenster Büro
+Group gHM_SWDO_1
+String HM_SWDO_state_1 "Fenster [%s]" <window> (gHM_SWDO_1)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905F34:1#STATE"}
+Switch HM_SWDO_battery_state_1 "Batterie [%s]" <battery> (gHM_SWDO_1)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905F34:0#LOW_BAT"}
+//Fenster Badezimmer 2
+Group gHM_SWDO_2
+String HM_SWDO_state_2 "Fenster [%s]" <window> (gHM_SWDO_2)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569A0A931:1#STATE"}
+Switch HM_SWDO_battery_state_2 "Batterie [%s]" <battery> (gHM_SWDO_2)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569A0A931:0#LOW_BAT"}
+//Fenster Arbeitszimmer Dani
+Group gHM_SWDO_3
+String HM_SWDO_state_3 "Fenster [%s]" <window> (gHM_SWDO_3)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905CD0:1#STATE"}
+Switch HM_SWDO_battery_state_3 "Batterie [%s]" <battery> (gHM_SWDO_3)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905CD0:0#LOW_BAT"}
+//Fenster Badezimmer 1
+Group gHM_SWDO_4
+String HM_SWDO_state_4 "Fenster [%s]" <window> (gHM_SWDO_4)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569A0A993:1#STATE"}
+Switch HM_SWDO_battery_state_4 "Batterie [%s]" <battery> (gHM_SWDO_4)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569A0A993:0#LOW_BAT"}
+//Fenster 1 Ankleidezimmer 
+Group gHM_SWDO_5
+String HM_SWDO_state_5 "Fenster [%s]" <window> (gHM_SWDO_5)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569961570:1#STATE"}
+Switch HM_SWDO_battery_state_5 "Batterie [%s]" <battery> (gHM_SWDO_5)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569961570:0#LOW_BAT"}
+//Fenster 2 Ankleidezimmer 
+Group gHM_SWDO_6
+String HM_SWDO_state_6 "Fenster [%s]" <window> (gHM_SWDO_6)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960877:1#STATE"}
+Switch HM_SWDO_battery_state_6 "Batterie [%s]" <battery> (gHM_SWDO_6)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960877:0#LOW_BAT"}
+//Fenster Galerie 
+Group gHM_SWDO_7
+String HM_SWDO_state_7 "Fenster [%s]" <window> (gHM_SWDO_7)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C996111B:1#STATE"}
+Switch HM_SWDO_battery_state_7 "Batterie [%s]" <battery> (gHM_SWDO_7)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C996111B:0#LOW_BAT"}
+//Fenster Küche
+Group gHM_SWDO_8
+String HM_SWDO_state_8 "Fenster [%s]" <window> (gHM_SWDO_8)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960BD5:1#STATE"}
+Switch HM_SWDO_battery_state_8 "Batterie [%s]" <battery> (gHM_SWDO_8)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960BD5:0#LOW_BAT"}
+//Speisekammer
+Group gHM_SWDO_9
+String HM_SWDO_state_9 "Fenster [%s]" <window> (gHM_SWDO_9)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960A3E:1#STATE"}
+Switch HM_SWDO_battery_state_9 "Batterie [%s]" <battery> (gHM_SWDO_9)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960A3E:0#LOW_BAT"}
+//Wohnzimmer
+Group gHM_SWDO_10
+String HM_SWDO_state_10 "Fenster [%s]" <window> (gHM_SWDO_10)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569A0A969:1#STATE"}
+Switch HM_SWDO_battery_state_10 "Batterie [%s]" <battery> (gHM_SWDO_10)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D569A0A969:0#LOW_BAT"}
+//Terassentür Esszimmer
+Group gHM_SWDO_11
+String HM_SWDO_state_11 "Tür [%s]" <door> (gHM_SWDO_11)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905F9F:1#STATE"}
+Switch HM_SWDO_battery_state_11 "Batterie [%s]" <battery> (gHM_SWDO_11)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9905F9F:0#LOW_BAT"}
+//Terassentür Wohnzimmer
+Group gHM_SWDO_12
+String HM_SWDO_state_12 "Tür [%s]" <door> (gHM_SWDO_12)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C99602BA:1#STATE"}
+Switch HM_SWDO_battery_state_12 "Batterie [%s]" <battery> (gHM_SWDO_12)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C99602BA:0#LOW_BAT"}
+
+//Terassentür Keller
+Group gHM_SWDO_13
+String HM_SWDO_state_13 "Tür [%s]" <door> (gHM_SWDO_13)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960FF0:1#STATE"}
+Switch HM_SWDO_battery_state_13 "Batterie [%s]" <battery> (gHM_SWDO_13)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960FF0:0#LOW_BAT"}
+
+//Fenster Schlafzimmer links
+Group gHM_SWDO_14
+String HM_SWDO_state_14 "Fenster [%s]" <window> (gHM_SWDO_14) {channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960862:1#STATE"}
+Switch HM_SWDO_battery_state_14 "Batterie [%s]" <battery> (gHM_SWDO_14)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960862:0#LOW_BAT"}
+

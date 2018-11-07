@@ -1,11 +1,58 @@
 sitemap homematic_swdo label="homematic swdo items" {
-	Frame label="HM-PSWDO Büro" {
-        Text item=HM_SWDO_state_1 icon="energy"
+	Frame label="HM-SWDO Fenster Büro" {
+        Text item=HM_SWDO_state_1 icon="Window"
+        Text item=HM_SWDO_battery_state_1 icon="Battery"
 	}
-	
-	Frame label="Demo group" {
-		Group item=gHM_SWDO_1 icon="window" label="Steckdose 1 Büro"
-
-	
+    Frame label="HM-SWDO Fenster Badezimmer 2" {
+        Text item=HM_SWDO_state_2 icon="Window"
+        Text item=HM_SWDO_battery_state_2 icon="Battery"
 	}
+    Frame label="HM-SWDO Fenster Arbeitszimmer Dani" {
+        Text item=HM_SWDO_state_3 icon="Window"
+        Text item=HM_SWDO_battery_state_3 icon="Battery"
+	}
+    Frame label="HM-SWDO Fenster Badezimmer 1" {
+        Text item=HM_SWDO_state_4 icon="Window"
+        Text item=HM_SWDO_battery_state_4 icon="Battery"
+	}
+    Frame label="HM-SWDO Fenster 1 Ankleidezimmer" {
+        Text item=HM_SWDO_state_5 icon="Window"
+        Text item=HM_SWDO_battery_state_5 icon="Battery"
+	}
+    Frame label="HM-SWDO Fenster 2 Ankleidezimmer" {
+        Text item=HM_SWDO_state_6 icon="Window"
+        Text item=HM_SWDO_battery_state_6 icon="Battery"
+	}
+    Frame label="HM-SWDO Fenster Galerie" {
+        Text item=HM_SWDO_state_7 icon="Window"
+        Text item=HM_SWDO_battery_state_7 icon="Battery"
+	}
+    Frame label="HM-SWDO Fenster Küche" {
+        Text item=HM_SWDO_state_8 icon="Window"
+        Text item=HM_SWDO_battery_state_8 icon="Battery"
+	}  
+    Frame label="HM-SWDO Fenster Speisekammer" {
+        Text item=HM_SWDO_state_9 icon="Window"
+        Text item=HM_SWDO_battery_state_9 icon="Battery"
+	}     
+        Frame label="HM-SWDO Fenster Wohnzimmer" {
+        Text item=HM_SWDO_state_10 icon="Window"
+        Text item=HM_SWDO_battery_state_10 icon="Battery"
+	}     
+        Frame label="HM-SWDO Terassentür Esszimmer" {
+        Text item=HM_SWDO_state_11 icon="Door"
+        Text item=HM_SWDO_battery_state_11 icon="Battery"
+	}  
+        Frame label="HM-SWDO Terassentür Wohnzimmer" {
+        Text item=HM_SWDO_state_12 icon="Door"
+        Text item=HM_SWDO_battery_state_12 icon="Battery"
+	}     
+        Frame label="HM-SWDO Terassentür Keller" {
+        Text item=HM_SWDO_state_13 icon="Door"
+        Text item=HM_SWDO_battery_state_13 icon="Battery"
+	}  
+        Frame label="HM-SWDO Fenster Schlafzimmer links" {
+        Text item=HM_SWDO_state_14 icon="Window"
+        Text item=HM_SWDO_battery_state_14 icon="Battery"
+	}       
 }
