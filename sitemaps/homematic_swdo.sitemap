@@ -55,4 +55,8 @@ sitemap homematic_swdo label="homematic swdo items" {
         Text item=HM_SWDO_state_14 icon="Window"
         Text item=HM_SWDO_battery_state_14 icon="Battery"
 	}       
+        Frame label="HM-SWDO Fenster Schlafzimmer rechts" {
+        Text item=HM_SWDO_state_15 icon="Window"
+        Text item=HM_SWDO_battery_state_15 icon="Battery"
+	}    
 }

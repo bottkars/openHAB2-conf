@@ -1,11 +1,12 @@
 
-Switch r13    "Licht Esszimmer" <light> (gLights)      {tinkerforge="uid=v3Q, subid=dining_1"}
+Switch r13    "Licht Esszimmer" <light> (gLightsOG)      {tinkerforge="uid=v3Q, subid=dining_1"}
 
-Switch r21    "Licht Couch" <light> (gLights)      {tinkerforge="uid=v3Q, subid=livingroom_1"}
-Switch r22    "Licht Korblampe" <light> (gLights)      {tinkerforge="uid=v3Q, subid=livingroom_2"}
-Switch r25    "Licht Fernsehbank" <light> (gLights)      {tinkerforge="uid=v3Q, subid=livingroom_5"}
+Switch r21    "Licht Couch" <light> (gLightsOG)      {tinkerforge="uid=v3Q, subid=livingroom_1"}
+Switch r22    "Licht Korblampe" <light> (gLightsOG)      {tinkerforge="uid=v3Q, subid=livingroom_2"}
+Switch r25    "Licht Fernsehbank" <light> (gLightsOG)      {tinkerforge="uid=v3Q, subid=livingroom_5"}
 
-Switch r31    "Licht Flur2" <light> (gLights)      {tinkerforge="uid=v3Q, subid=floor_1"}
-Switch r32    "Licht Flur1" <light> (gLights)      {tinkerforge="uid=v3Q, subid=floor_2"}
+Switch r31    "Licht Flur2" <light> (gLightsEG)      {tinkerforge="uid=v3Q, subid=floor_1"}
+Switch r32    "Licht Flur1" <light> (gLightsEG)      {tinkerforge="uid=v3Q, subid=floor_2"}
 
-Group:Switch:OR(ON,OFF)    gLights    "Alle Lichter [(%d)]"
+Group:Switch   gLightsOG    "Alle Lichter"
+Group:Switch   gLightsEG    "Alle Lichter"

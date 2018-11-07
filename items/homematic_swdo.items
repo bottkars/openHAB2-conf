@@ -57,3 +57,9 @@ Group gHM_SWDO_14
 String HM_SWDO_state_14 "Fenster [%s]" <window> (gHM_SWDO_14) {channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960862:1#STATE"}
 Switch HM_SWDO_battery_state_14 "Batterie [%s]" <battery> (gHM_SWDO_14)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960862:0#LOW_BAT"}
 
+//Fenster Schlafzimmer rechts
+Group gHM_SWDO_15
+String HM_SWDO_state_15 "Fenster [%s]" <window> (gHM_SWDO_15) {channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960A44:1#STATE"}
+Switch HM_SWDO_battery_state_15 "Batterie [%s]" <battery> (gHM_SWDO_15)	{channel="homematic:HMIP-SWDO:3014F711A0001F98A99A3A1A:0000D3C9960A44:0#LOW_BAT"}
+
+

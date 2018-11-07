@@ -1,10 +1,16 @@
 sitemap home label="Dani´s und Karsten´s Home" {
-    Frame label="Erdgeschoss" icon="groundfloor" 
+ //   Frame label="Keller" icon="cellar" 
 
-    Frame label="Erster Stock" icon="firstfloor" 
+    Frame label="Erster Erdgeschoss" icon="groundfloor" 
+    {
+        Switch label="alle Flur Lampen Schalten" item=gLightsEG icon="light"
+    }
     
 
-    Frame label="Zweiter Stock" icon="attic" 
+    Frame label="Erster Stock" icon="attic" 
+    {
+        Switch label="alle Wohzimmer Lampen Schalten" item=gLightsOG icon="light"
+    }
 
     Frame label="Offene Fenster"
 	{
@@ -19,8 +25,7 @@ sitemap home label="Dani´s und Karsten´s Home" {
     Text item=HM_SWDO_state_9  label="Fenster Speisekammer" visibility=[HM_SWDO_state_9==OPEN]
     Text item=HM_SWDO_state_10  label="Fenster Wohnzimmer" visibility=[HM_SWDO_state_10==OPEN]
     Text item=HM_SWDO_state_14  label="Fenster Schlafzimmer links" visibility=[HM_SWDO_state_14==OPEN]
-
-	}
+    Text item=HM_SWDO_state_15  label="Fenster Schlafzimmer rechts" visibility=[HM_SWDO_state_15==OPEN]	}
     Frame label="Offene Türen"
 	{
     Text item=HM_SWDO_state_11  label="Terassentür Esszimmer" visibility=[HM_SWDO_state_11==OPEN]
