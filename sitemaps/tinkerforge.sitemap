@@ -1,8 +1,8 @@
 sitemap tinkerforge label="RemoteSwitch"
 {
     Frame label="Group" {
-        Text label="Group Demo" icon="lights" {
-        Switch item=gLightsEG mappings=[OFF="All Off",ON="All On"]
+        Text label="Group Demo" icon="light" {
+        Switch item=gLightsOG mappings=[OFF="All Off",ON="All On"]
         }
     }
   Frame label="Remote" {

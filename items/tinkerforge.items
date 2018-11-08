@@ -8,5 +8,5 @@ Switch r25    "Licht Fernsehbank" <light> (gLightsOG)      {tinkerforge="uid=v3Q
 Switch r31    "Licht Flur2" <light> (gLightsEG)      {tinkerforge="uid=v3Q, subid=floor_1"}
 Switch r32    "Licht Flur1" <light> (gLightsEG)      {tinkerforge="uid=v3Q, subid=floor_2"}
 
-Group:Switch   gLightsOG    "Alle Lichter"
-Group:Switch   gLightsEG    "Alle Lichter"
+Group:Switch:OR(ON,OFF)    gLightsOG    "Alle Lichter [(%d)]"
+Group:Switch:OR(ON,OFF)    gLightsEG    "Alle Lichter [(%d)]"

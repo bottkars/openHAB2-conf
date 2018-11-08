@@ -1,19 +1,12 @@
 sitemap home label="Dani´s und Karsten´s Home" {
- //   Frame label="Keller" icon="cellar" 
-
-    Frame label="Erster Erdgeschoss" icon="groundfloor" 
-    {
+    Frame label="Erdgeschoss" icon="groundfloor" {
         Switch label="alle Flur Lampen Schalten" item=gLightsEG icon="light"
     }
-    
-
-    Frame label="Erster Stock" icon="attic" 
-    {
+    Frame label="Erster Stock" icon="attic" {
         Switch label="alle Wohzimmer Lampen Schalten" item=gLightsOG icon="light"
     }
 
-    Frame label="Offene Fenster"
-	{
+    Frame label="Offene Fenster" icon="window" {
 	Text item=HM_SWDO_state_1  label="Fenster Büro UG" visibility=[HM_SWDO_state_1==OPEN]
     Text item=HM_SWDO_state_2  label="Fenster Badezimmer 2" visibility=[HM_SWDO_state_2==OPEN]
     Text item=HM_SWDO_state_3  label="Fenster Arbeitszimmer Dani" visibility=[HM_SWDO_state_3==OPEN]
