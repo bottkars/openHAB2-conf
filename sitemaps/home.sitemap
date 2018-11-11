@@ -1,8 +1,35 @@
 sitemap home label="Dani´s und Karsten´s Home" {
+    Frame label="Wetter" icon="Weather" {
+ //       Image item=Icon
+ //       Image item=ForecastIcon label="Vorschau heute" 
+ //       Image item=ForecastTomorrowIcon label="Vorschau morgen"
+ //       Image item=ForecastDay2Icon label="Vorschau übermorgen"
+        Default item=Conditions label="Bedingungen" icon=none
+        Text item=Station icon=none
+        Text item=ObservationTime icon=none
+        Text item=Temperature icon="temperature"
+        Text item=FeelTemp label="RealFeel" icon="temperature"
+ 
+
+    }
+    Frame label="Garten" icon="garden" {
+        Group item=Garden
+        Switch item=Outlet_4 icon="outdoorlight" label="Teichbeleuchtung"
+
+    }
+    Frame label="Keller" icon="cellar" {
+        Group item=Cellar
+        Group item=Cellar_Hallway
+        Group item=Cellar_Office
+        Group item=Cellar_Sport
+    }
     Frame label="Erdgeschoss" icon="groundfloor" {
+        Group item=GF
         Switch label="alle Flur Lampen Schalten" item=gLightsEG icon="light"
     }
+
     Frame label="Erster Stock" icon="attic" {
+        Group item=FF
         Switch label="alle Wohzimmer Lampen Schalten" item=gLightsOG icon="light"
     }
 

@@ -23,7 +23,7 @@ sitemap homematic_power label="homematic power items" {
 		Text item=HM_PSM_Voltage_3 icon="energy"
         Text item=HM_PSM_Energy_3 icon="energy"
 	}    
-	Frame label="HM-PSM Steckdose Drucker Dani" {
+	Frame label="HM-PSM Steckdose Waschmaschine" {
 		Switch item=HM_PSM_outlet_4 icon="poweroutlet"
 		Text item=HM_PSM_Frequency_4 icon="energy"
 		Text item=HM_PSM_Power_4 icon="energy"

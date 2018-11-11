@@ -18,5 +18,5 @@ Switch Receiver "Receiver" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:30
 Switch FlowerligtGF "Planzenlicht Flur" (Alexa) ["Lighting"] { channel="homematic:HMIP-PS:3014F711A0001F98A99A3A1A:00021569960DA3:3#STATE" }
 
 //TinkerSwitche
-Group:Switch LightsEG "Lichter Flur" (Alexa)["Lighting"]
-Group:Switch LightsOG "Lichter Wohnzimmer" (Alexa)["Lighting"]
+Group:Switch:OR(OFF,ON) LightsEG "Lichter Flur" (Alexa)["Lighting"]
+Group:Switch:OR(OFF,ON) LightsOG "Lichter Wohnzimmer" (Alexa)["Lighting"]

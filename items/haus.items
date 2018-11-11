@@ -1,0 +1,12 @@
+Group   Home    "Unser Zuhause" <house>
+
+Group   Garden  "Garten"       <garden>        (Home)
+Group   Cellar  "Keller"        <cellar>        (Home)
+Group   GF      "Erdgeschoss"   <groundfloor>   (Home)
+Group   FF      "Erster Stock"  <firstfloor>    (Home)
+
+Group   Cellar_Office   "Arbeitszimmer UG"  <office> (Home,Cellar)
+Group   Cellar_Hallway  "Flur UG"   <corridor>   (Home,Cellar)
+Group   Cellar_Sport    "Sportzimmer UG" <pantry> (Home,Cellar)   
+
+
