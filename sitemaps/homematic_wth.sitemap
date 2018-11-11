@@ -1,4 +1,4 @@
-sitemap homematic_wth label="homematic wth items" {
+sitemap homematic_wth label="Thermostate" {
 	Frame label="HM-WTH Hütte Cruso" {
 		Text item=HM_WTH_1_actual icon="Temperature"
 		Text item=HM_WTH_1_setpoint icon="Temperature"
@@ -32,5 +32,82 @@ sitemap homematic_wth label="homematic wth items" {
 		Text item=HM_WTH_5_humidity icon="Humidity"
         Text item=HM_WTH_5_battery_state icon="Battery"
         Text item=HM_WTH_5_window_state icon="window"
-        }                                
+        }  
+	Frame label="HM-WTH Esszimmer" {
+		Text item=HM_WTH_6_actual icon="Temperature"
+		Text item=HM_WTH_6_setpoint icon="Temperature"
+		Text item=HM_WTH_6_humidity icon="Humidity"
+        Text item=HM_WTH_6_battery_state icon="Battery"
+        Text item=HM_WTH_6_window_state icon="window"
+        }      
+	Frame label="HM-WTH Galerie" {
+		Text item=HM_WTH_7_actual icon="Temperature"
+		Text item=HM_WTH_7_setpoint icon="Temperature"
+		Text item=HM_WTH_7_humidity icon="Humidity"
+        Text item=HM_WTH_7_battery_state icon="Battery"
+        Text item=HM_WTH_7_window_state icon="window"
+        }  
+	Frame label="HM-WTH Schlafzimmer" {
+		Text item=HM_WTH_8_actual icon="Temperature"
+		Text item=HM_WTH_8_setpoint icon="Temperature"
+		Text item=HM_WTH_8_humidity icon="Humidity"
+        Text item=HM_WTH_8_battery_state icon="Battery"
+        Text item=HM_WTH_8_window_state icon="window"
+        }  
+	Frame label="HM-WTH Wohnzimmer" {
+		Text item=HM_WTH_9_actual icon="Temperature"
+		Text item=HM_WTH_9_setpoint icon="Temperature"
+		Text item=HM_WTH_9_humidity icon="Humidity"
+        Text item=HM_WTH_9_battery_state icon="Battery"
+        Text item=HM_WTH_9_window_state icon="window"
+        }                                          
+	Frame label="HM-WTH Gäste WC" {
+		Text item=HM_WTH_10_actual icon="Temperature"
+		Text item=HM_WTH_10_setpoint icon="Temperature"
+		Text item=HM_WTH_10_humidity icon="Humidity"
+        Text item=HM_WTH_10_battery_state icon="Battery"
+        Text item=HM_WTH_10_window_state icon="window"
+        }   
+	Frame label="HM-WTH Ankleidezimmer" {
+		Text item=HM_WTH_11_actual icon="Temperature"
+		Text item=HM_WTH_11_setpoint icon="Temperature"
+		Text item=HM_WTH_11_humidity icon="Humidity"
+        Text item=HM_WTH_11_battery_state icon="Battery"
+        Text item=HM_WTH_11_window_state icon="window"
+        } 
+	Frame label="HM-WTH Badezimmer 2" {
+		Text item=HM_WTH_12_actual icon="Temperature"
+		Text item=HM_WTH_12_setpoint icon="Temperature"
+		Text item=HM_WTH_12_humidity icon="Humidity"
+        Text item=HM_WTH_12_battery_state icon="Battery"
+        Text item=HM_WTH_12_window_state icon="window"
+        }
+	Frame label="HM-WTH Flur EG" {
+		Text item=HM_WTH_13_actual icon="Temperature"
+		Text item=HM_WTH_13_setpoint icon="Temperature"
+		Text item=HM_WTH_13_humidity icon="Humidity"
+        Text item=HM_WTH_13_battery_state icon="Battery"
+        Text item=HM_WTH_13_window_state icon="window"
+        }                  
+	Frame label="HM-WTH Flur UG" {
+		Text item=HM_WTH_14_actual icon="Temperature"
+		Text item=HM_WTH_14_setpoint icon="Temperature"
+		Text item=HM_WTH_14_humidity icon="Humidity"
+        Text item=HM_WTH_14_battery_state icon="Battery"
+        Text item=HM_WTH_14_window_state icon="window"
+        }                  
+	Frame label="HM-WTH Küche" {
+		Text item=HM_WTH_15_actual icon="Temperature"
+		Text item=HM_WTH_15_setpoint icon="Temperature"
+		Text item=HM_WTH_15_humidity icon="Humidity"
+        Text item=HM_WTH_15_battery_state icon="Battery"
+        Text item=HM_WTH_15_window_state icon="window"
+        }                  
+	Frame label="HM-WTH Sportzimmer" {
+		Text item=HM_WTH_16_actual icon="Temperature"
+		Text item=HM_WTH_16_setpoint icon="Temperature"
+		Text item=HM_WTH_16_humidity icon="Humidity"
+        Text item=HM_WTH_16_battery_state icon="Battery"
+        Text item=HM_WTH_16_window_state icon="window"
+        }  
 	}
