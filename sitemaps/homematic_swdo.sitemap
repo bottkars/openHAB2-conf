@@ -58,5 +58,20 @@ sitemap homematic_swdo label="homematic swdo items" {
         Frame label="HM-SWDO Fenster Schlafzimmer rechts" {
         Text item=HM_SWDO_state_15 icon="Window"
         Text item=HM_SWDO_battery_state_15 icon="Battery"
-	}    
+	}   
+        Frame label="HM-SWDO Fenster Sportzimmer" {
+        Text item=HM_SWDO_state_16 icon="Window"
+        Text item=HM_SWDO_battery_state_16 icon="Battery"
+	}       
+        Frame label="HM-SWDO Fenster WC" {
+        Text item=HM_SWDO_state_17 icon="Window"
+        Text item=HM_SWDO_battery_state_17 icon="Battery"
+        }
+        Frame label="HM-SWDO-I Haustür" {
+        Text item=HM_SWDO_state_18 icon="Door"
+        Text item=HM_SWDO_battery_state_18 icon="Battery"
+        }
+
+
+
 }

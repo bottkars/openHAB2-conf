@@ -18,11 +18,16 @@ sitemap home label="Dani´s und Karsten´s Home" {
     Text item=HM_SWDO_state_9  label="Fenster Speisekammer" visibility=[HM_SWDO_state_9==OPEN]
     Text item=HM_SWDO_state_10  label="Fenster Wohnzimmer" visibility=[HM_SWDO_state_10==OPEN]
     Text item=HM_SWDO_state_14  label="Fenster Schlafzimmer links" visibility=[HM_SWDO_state_14==OPEN]
-    Text item=HM_SWDO_state_15  label="Fenster Schlafzimmer rechts" visibility=[HM_SWDO_state_15==OPEN]	}
+    Text item=HM_SWDO_state_15  label="Fenster Schlafzimmer rechts" visibility=[HM_SWDO_state_15==OPEN]	
+    Text item=HM_SWDO_state_16  label="Fenster Sportzimmer" visibility=[HM_SWDO_state_16==OPEN]	
+    Text item=HM_SWDO_state_17  label="Fenster WC" visibility=[HM_SWDO_state_17==OPEN]	
+    
+    }
     Frame label="Offene Türen"
 	{
     Text item=HM_SWDO_state_11  label="Terassentür Esszimmer" visibility=[HM_SWDO_state_11==OPEN]
     Text item=HM_SWDO_state_12  label="Terassentür Wohnzimmer" visibility=[HM_SWDO_state_12==OPEN]
     Text item=HM_SWDO_state_13  label="Terassentür Keller" visibility=[HM_SWDO_state_13==OPEN]
+    Text item=HM_SWDO_state_18  label="Haustür" visibility=[HM_SWDO_state_18==OPEN]
     }   
 }
