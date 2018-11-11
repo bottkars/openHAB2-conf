@@ -1,0 +1,36 @@
+sitemap homematic_wth label="homematic wth items" {
+	Frame label="HM-WTH Hütte Cruso" {
+		Text item=HM_WTH_1_actual icon="Temperature"
+		Text item=HM_WTH_1_setpoint icon="Temperature"
+		Text item=HM_WTH_1_humidity icon="Humidity"
+        Text item=HM_WTH_1_battery_state icon="Battery"
+        }
+	Frame label="HM-WTH Foyer" {
+		Text item=HM_WTH_2_actual icon="Temperature"
+		Text item=HM_WTH_2_setpoint icon="Temperature"
+		Text item=HM_WTH_2_humidity icon="Humidity"
+        Text item=HM_WTH_2_battery_state icon="Battery"
+        Text item=HM_WTH_2_window_state icon="window"
+        }  
+	Frame label="HM-WTH Arbeitszimmer UG" {
+		Text item=HM_WTH_3_actual icon="Temperature"
+		Text item=HM_WTH_3_setpoint icon="Temperature"
+		Text item=HM_WTH_3_humidity icon="Humidity"
+        Text item=HM_WTH_3_battery_state icon="Battery"
+        Text item=HM_WTH_3_window_state icon="window"
+        }   
+	Frame label="HM-WTH Arbeitszimmer Dani" {
+		Text item=HM_WTH_4_actual icon="Temperature"
+		Text item=HM_WTH_4_setpoint icon="Temperature"
+		Text item=HM_WTH_4_humidity icon="Humidity"
+        Text item=HM_WTH_4_battery_state icon="Battery"
+        Text item=HM_WTH_4_window_state icon="window"
+        }
+	Frame label="HM-WTH Badezimmer 1" {
+		Text item=HM_WTH_5_actual icon="Temperature"
+		Text item=HM_WTH_5_setpoint icon="Temperature"
+		Text item=HM_WTH_5_humidity icon="Humidity"
+        Text item=HM_WTH_5_battery_state icon="Battery"
+        Text item=HM_WTH_5_window_state icon="window"
+        }                                
+	}
