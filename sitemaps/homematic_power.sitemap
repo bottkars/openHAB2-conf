@@ -49,6 +49,5 @@ sitemap homematic_power label="homematic power items" {
 		Group item=gHM_PSM_4 icon="poweroutlet" label="Drucker Dani"
 		Group item=gHM_PSM_5 icon="poweroutlet" label="Receiver"
 		Group item=gHM_PSM_6 icon="poweroutlet" label="Pflanzenlicht Flur"
-	
 	}
 }
