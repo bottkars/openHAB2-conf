@@ -1,0 +1,132 @@
+Group gHM_WTH_ALL
+Group gROOM_TEMP_ALL
+Group gROOM_HUMID_ALL
+
+
+//
+Group gHM_WTH_1 "Hütte Cruso" <heating> (gHM_WTH_ALL,Garden)
+Number HM_WTH_1_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_1)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954A99:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_1_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_1)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954A99:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_1_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_1) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954A99:1#HUMIDITY" }
+Switch HM_WTH_1_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_1)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954A99:0#LOW_BAT" }
+
+//Foyer
+Group gHM_WTH_2 "Foyer" <heating> (gHM_WTH_ALL)
+Number HM_WTH_2_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_2)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9955024:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_2_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_2)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9955024:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_2_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_2) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9955024:1#HUMIDITY" }
+Switch HM_WTH_2_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_2){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9955024:0#LOW_BAT" }
+String HM_WTH_2_window_state "Fenster [%s]" <window> (gHM_WTH_2)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9955024:1#WINDOW_STATE" }
+
+//Arbeitszimmer UG
+Group gHM_WTH_3 "Arbeitszimmer UG" <heating> (gHM_WTH_ALL,Cellar_Office)
+Number HM_WTH_3_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_3)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954B05:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_3_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_3)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954B05:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_3_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_3) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954B05:1#HUMIDITY" }
+Switch HM_WTH_3_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_3){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954B05:0#LOW_BAT" }
+String HM_WTH_3_window_state "Fenster [%s]" <window> (gHM_WTH_3)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954B05:1#WINDOW_STATE" }
+
+//Arbeitszimmer Dani
+Group gHM_WTH_4 "Arbeitszimmer Dani" <heating> (gHM_WTH_ALL)
+Number HM_WTH_4_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_4)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069DC:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_4_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_4)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069DC:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_4_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_4) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069DC:1#HUMIDITY" }
+Switch HM_WTH_4_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_4){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069DC:0#LOW_BAT" }
+String HM_WTH_4_window_state "Fenster [%s]" <window> (gHM_WTH_4)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069DC:1#WINDOW_STATE" }
+
+//Badezimmer 1
+Group gHM_WTH_5 "Arbeitszimmer Dani" <heating> (gHM_WTH_ALL)
+Number HM_WTH_5_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_5)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906A79:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_5_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_5)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906A79:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_5_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_5) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906A79:1#HUMIDITY" }
+Switch HM_WTH_5_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_5){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906A79:0#LOW_BAT" }
+String HM_WTH_5_window_state "Fenster [%s]" <window> (gHM_WTH_5)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906A79:1#WINDOW_STATE" }
+
+//Esszimmer
+Group gHM_WTH_6 "Esszimmer" <heating> (gHM_WTH_ALL)
+Number HM_WTH_6_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_6)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954DF9:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_6_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_6)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954DF9:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_6_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_6) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954DF9:1#HUMIDITY" }
+Switch HM_WTH_6_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_6){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954DF9:0#LOW_BAT" }
+String HM_WTH_6_window_state "Fenster [%s]" <window> (gHM_WTH_6)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954DF9:1#WINDOW_STATE" }
+
+//Galerie
+Group gHM_WTH_7 "Galerie" <heating> (gHM_WTH_ALL)
+Number HM_WTH_7_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_7)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069C8:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_7_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_7)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069C8:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_7_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_7) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069C8:1#HUMIDITY" }
+Switch HM_WTH_7_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_7){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069C8:0#LOW_BAT" }
+String HM_WTH_7_window_state "Fenster [%s]" <window> (gHM_WTH_7)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C99069C8:1#WINDOW_STATE" }
+
+//Schlafzimmer
+Group gHM_WTH_8 "Schlafzimmer" <heating> (gHM_WTH_ALL)
+Number HM_WTH_8_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_8)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906E0F:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_8_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_8)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906E0F:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_8_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_8) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906E0F:1#HUMIDITY" }
+Switch HM_WTH_8_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_8){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906E0F:0#LOW_BAT" }
+String HM_WTH_8_window_state "Fenster [%s]" <window> (gHM_WTH_8)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9906E0F:1#WINDOW_STATE" }
+
+//Wohnzimmer
+Group gHM_WTH_9 "Wohnzimmer" <heating> (gHM_WTH_ALL)
+Number HM_WTH_9_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_9)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954C47:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_9_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_9)      	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954C47:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_9_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_9) {channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954C47:1#HUMIDITY" }
+Switch HM_WTH_9_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_9){channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954C47:0#LOW_BAT" }
+String HM_WTH_9_window_state "Fenster [%s]" <window> (gHM_WTH_9)	{channel="homematic:HMIP-WTH:3014F711A0001F98A99A3A1A:000313C9954C47:1#WINDOW_STATE" }
+
+
+//WC Karsten
+Group gHM_WTH_10 "Gäste WC" <heating> (gHM_WTH_ALL)
+Number HM_WTH_10_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_10)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3A2:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_10_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_10)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3A2:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_10_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_10) {channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3A2:1#HUMIDITY" }
+Switch HM_WTH_10_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_10){channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3A2:0#LOW_BAT" }
+String HM_WTH_10_window_state "Fenster [%s]" <window> (gHM_WTH_10)	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3A2:1#WINDOW_STATE" }
+
+//Ankleidezimmer
+Group gHM_WTH_11 "Ankleidezimmer" <heating> (gHM_WTH_ALL)
+Number HM_WTH_11_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_11)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C8:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_11_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_11)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C8:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_11_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_11) {channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C8:1#HUMIDITY" }
+Switch HM_WTH_11_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_11){channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C8:0#LOW_BAT" }
+String HM_WTH_11_window_state "Fenster [%s]" <window> (gHM_WTH_11)	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C8:1#WINDOW_STATE" }
+
+//Ankleidezimmer
+Group gHM_WTH_12 "Ankleidezimmer" <heating> (gHM_WTH_ALL)
+Number HM_WTH_12_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_12)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_12_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_12)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_12_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_12) {channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#HUMIDITY" }
+Switch HM_WTH_12_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_12){channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:0#LOW_BAT" }
+String HM_WTH_12_window_state "Fenster [%s]" <window> (gHM_WTH_12)	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#WINDOW_STATE" }
+
+//Flur EG
+Group gHM_WTH_13 "Flur EG" <heating> (gHM_WTH_ALL)
+Number HM_WTH_13_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_13)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_13_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_13)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_13_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_13) {channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#HUMIDITY" }
+Switch HM_WTH_13_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_13){channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:0#LOW_BAT" }
+String HM_WTH_13_window_state "Fenster [%s]" <window> (gHM_WTH_13)	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F3C7:1#WINDOW_STATE" }
+
+//Flur EG
+Group gHM_WTH_14 "Flur UG" <heating> (gHM_WTH_ALL,Cellar_Hallway)
+Number HM_WTH_14_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_14)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F728:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_14_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_14)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F728:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_14_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_14) {channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F728:1#HUMIDITY" }
+Switch HM_WTH_14_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_14){channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F728:0#LOW_BAT" }
+String HM_WTH_14_window_state "Fenster [%s]" <window> (gHM_WTH_14)	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F728:1#WINDOW_STATE" }
+
+//Küche
+Group gHM_WTH_15 "Küche" <heating> (gHM_WTH_ALL)
+Number HM_WTH_15_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_15)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A9709AAC9FD:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_15_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_15)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A9709AAC9FD:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_15_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_15) {channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A9709AAC9FD:1#HUMIDITY" }
+Switch HM_WTH_15_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_15){channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A9709AAC9FD:0#LOW_BAT" }
+String HM_WTH_15_window_state "Fenster [%s]" <window> (gHM_WTH_15)	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A9709AAC9FD:1#WINDOW_STATE" }
+
+//Sportzimmer
+Group gHM_WTH_16 "Sportzimmer UG" <heating> (gHM_WTH_ALL,Cellar_Sport)
+Number HM_WTH_16_actual "Ist [%.1f °C]"	<temperature>   (gROOM_TEMP_ALL,gHM_WTH_16)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F36A:1#ACTUAL_TEMPERATURE" }
+Number HM_WTH_16_setpoint "Soll [%.1f °C]"        	<temperature>   (gHM_WTH_16)      	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F36A:1#SET_POINT_TEMPERATURE" }
+Number HM_WTH_16_humidity "Luftfeuchte [%d %%]"  <humidity> (gROOM_HUMID_ALL,gHM_WTH_16) {channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F36A:1#HUMIDITY" }
+Switch HM_WTH_16_battery_state "Batterie [MAP(batterie.map):%s]" <battery> (gHM_WTH_16){channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F36A:0#LOW_BAT" }
+String HM_WTH_16_window_state "Fenster [%s]" <window> (gHM_WTH_16)	{channel="homematic:HmIP-WTH-2:3014F711A0001F98A99A3A1A:000A970994F36A:1#WINDOW_STATE" }

@@ -2,7 +2,7 @@
 Group Alexa "Alexa"
 
 Switch Espressomaschine  "Espressomaschine" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_200:192_168_1_1:087610147315:outlet" }
-Switch Napoleon "Napoleon" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:outlet" }
+Switch Napoleon "Barbecue" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:outlet" }
 Switch Pondlights "Teichbeleuchtung" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570059762:outlet" }
 Switch Laser "Laser Terasse" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:outlet" }
 Switch Uvclean "UV Klärer" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570078695:outlet" }
@@ -18,5 +18,5 @@ Switch Receiver "Receiver" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:30
 Switch FlowerligtGF "Planzenlicht Flur" (Alexa) ["Lighting"] { channel="homematic:HMIP-PS:3014F711A0001F98A99A3A1A:00021569960DA3:3#STATE" }
 
 //TinkerSwitche
-Group:Switch:OR(OFF,ON) LightsEG "Lichter Flur" (Alexa)["Lighting"]
-Group:Switch:OR(OFF,ON) LightsOG "Lichter Wohnzimmer" (Alexa)["Lighting"]
+Group:Switch:OR(OFF,ON) LightsEG "Lichter Erdgeschoss" (Alexa)["Lighting"]
+Group:Switch:OR(OFF,ON) LightsOG "Lichter Obergeschoss" (Alexa)["Lighting"]

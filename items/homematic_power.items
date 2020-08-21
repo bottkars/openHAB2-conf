@@ -41,3 +41,11 @@ Number:ElectricPotential HM_PSM_Energy_5 "Enery Count [%.1f Wh]"  <energy> (gHM_
 //Planzenlicht Flur
 Group gHM_PSM_6
 Switch HM_PSM_outlet_6 "Switchable outlet" (gHM_PSM_6) { channel="homematic:HMIP-PS:3014F711A0001F98A99A3A1A:00021569960DA3:3#STATE" }
+//Pflanzlicht OG
+Group gHM_PSM_7
+Switch HM_PSM_outlet_7 "Switchable outlet" (gHM_PSM_7) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99CAC40:3#STATE" }
+Number:ElectricPotential HM_PSM_Voltage_7 "Current voltage [%.1f V]"  <energy> (gHM_PSM_7) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99CAC40:6#VOLTAGE"}
+Number:ElectricPotential HM_PSM_Amperage_7 "Current amperage [%.1f mA]"  <energy> (gHM_PSM_7) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99CAC40:6#CURRENT"}
+Number:ElectricPotential HM_PSM_Power_7 "Current Power [%.1f W]"  <energy> (gHM_PSM_7) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99CAC40:6#POWER"}
+Number:ElectricPotential HM_PSM_Frequency_7 "Current Frequency [%.1f Hz]"  <energy> (gHM_PSM_7) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99CAC40:6#FREQUENCY"}
+Number:ElectricPotential HM_PSM_Energy_7 "Enery Count [%.1f Wh]"  <energy> (gHM_PSM_7) { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99CAC40:6#ENERGY_COUNTER"}

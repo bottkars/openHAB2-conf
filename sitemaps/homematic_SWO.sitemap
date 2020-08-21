@@ -1,0 +1,16 @@
+sitemap homematic_wth label="Wetterstation" {
+	Frame label="HM-SWO Wetterstation" {
+		Text item=HM_SWO_1_actual icon="Temperature"
+		Text item=HM_STHO_A_1_actual icon="Temperature"
+		Text item=HM_STHO_A_2_actual icon="Temperature"
+//		Text item=HM_WTH_1_setpoint icon="Temperature"
+		Text item=HM_SWO_1_humidity icon="Humidity"
+		Text item=HM_STHO_A_1_humidity icon="Humidity"
+		Text item=HM_STHO_A_2_humidity icon="Humidity"
+		Text item=HM_SWO_1_WindSpeed icon="Wind"
+		Text item=HM_SWO_1_WindDir icon="Wind"
+		
+//        Text item=HM_WTH_1_battery_state icon="Battery"
+        }
+        }
+        

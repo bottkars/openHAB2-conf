@@ -38,7 +38,15 @@ sitemap homematic_power label="homematic power items" {
 		Text item=HM_PSM_Amperage_5 icon="energy"
 		Text item=HM_PSM_Voltage_5 icon="energy"
         Text item=HM_PSM_Energy_5 icon="energy"
-	}    
+	} 
+	Frame label="HM-PSM Steckdose Pflanzlicht OG" {
+		Switch item=HM_PSM_outlet_7 icon="poweroutlet"
+		Text item=HM_PSM_Frequency_7 icon="energy"
+		Text item=HM_PSM_Power_7 icon="energy"
+		Text item=HM_PSM_Amperage_7 icon="energy"
+		Text item=HM_PSM_Voltage_7 icon="energy"
+        Text item=HM_PSM_Energy_7 icon="energy"
+        }	   
 	Frame label="HM-PS Steckdose Pflanzenlicht Flur" {
 		Switch item=HM_PSM_outlet_6 icon="poweroutlet"
 	} 		
@@ -49,5 +57,6 @@ sitemap homematic_power label="homematic power items" {
 		Group item=gHM_PSM_4 icon="poweroutlet" label="Drucker Dani"
 		Group item=gHM_PSM_5 icon="poweroutlet" label="Receiver"
 		Group item=gHM_PSM_6 icon="poweroutlet" label="Pflanzenlicht Flur"
+		Group item=gHM_PSM_7 icon="poweroutlet" label="Pflanzenlicht OG"
 	}
 }

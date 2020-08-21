@@ -1,17 +1,41 @@
 sitemap home label="Dani´s und Karsten´s Home" {
     Frame label="Wetter" icon="Weather" {
+    	Text item=HM_SWO_1_actual icon="Temperature" label="Temperatur Terasse Sonne"
+    	Text item=HM_STHO_A_1_actual icon="Temperature" label="Temperatur Terasse Schatten"
+		Text item=HM_STHO_A_2_actual icon="Temperature" label="Temperatur Terasse Garten"
+		Text item=HM_SWO_1_humidity icon="Humidity" label="Luftfeuchte Terasse Sonne"
+		Text item=HM_STHO_A_1_humidity icon="Humidity" label="Luftfeuchte Terasse Schatten"
+		Text item=HM_STHO_A_2_humidity icon="Humidity" label="Luftfeuchte Garten"
+		Text item=HM_SWO_1_WindDir
+		Text item=HM_SWO_1_WindSpeed icon="Wind" label="Windgeschwindigkeit"	
  //       Image item=Icon
  //       Image item=ForecastIcon label="Vorschau heute" 
  //       Image item=ForecastTomorrowIcon label="Vorschau morgen"
  //       Image item=ForecastDay2Icon label="Vorschau übermorgen"
-        Default item=Conditions label="Bedingungen" icon=none
-        Text item=Station icon=none
-        Text item=ObservationTime icon=none
-        Text item=Temperature icon="temperature"
-        Text item=FeelTemp label="RealFeel" icon="temperature"
- 
-
-    }
+ //      Default item=Conditions label="Bedingungen" icon=none
+ //       Text item=Station icon=none
+ //       Text item=ObservationTime icon=none
+ //       Text item=Temperature icon="temperature"
+ //       Text item=FeelTemp label="RealFeel" icon="temperature"
+   }
+     Frame label="Raumtemperaturen" icon="temperature" {
+		Text item=HM_WTH_1_actual icon="Temperature" label="Hütte Cruso"
+		Text item=HM_WTH_2_actual icon="Temperature" label="Foyer"
+		Text item=HM_WTH_3_actual icon="Temperature" label="Arbeitszimmer Karsten"
+		Text item=HM_WTH_4_actual icon="Temperature" label="Arbeitszimmer Dani"
+		Text item=HM_WTH_5_actual icon="Temperature" label="Badezimmer 1"
+		Text item=HM_WTH_6_actual icon="Temperature" label="Esszimmer"
+		Text item=HM_WTH_7_actual icon="Temperature" label="Galerie"
+		Text item=HM_WTH_8_actual icon="Temperature" label="Schlafzimmer"
+		Text item=HM_WTH_9_actual icon="Temperature" label="Wohnzimmer"
+		Text item=HM_WTH_10_actual icon="Temperature" label="WC Gäste"
+		Text item=HM_WTH_11_actual icon="Temperature" label="Ankleidezimmer"
+		Text item=HM_WTH_12_actual icon="Temperature" label="Badezimmer 2"
+		Text item=HM_WTH_13_actual icon="Temperature" label="Flur EG"
+		Text item=HM_WTH_14_actual icon="Temperature" label="Flur OG"
+		Text item=HM_WTH_15_actual icon="Temperature" label="Küche"
+		Text item=HM_WTH_16_actual icon="Temperature" label="Sportzimmer Keller"
+	}
     Frame label="Garten" icon="garden" {
         Group item=Garden
         Switch item=Outlet_4 icon="outdoorlight" label="Teichbeleuchtung"
