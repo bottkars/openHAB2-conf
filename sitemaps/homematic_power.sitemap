@@ -1,5 +1,5 @@
 sitemap homematic_power label="homematic power items" {
-	Frame label="HM-PSM Steckdose 1 Büro" {
+	Frame label="HM-PSM Steckdose 1 Zwift" {
 		Switch item=HM_PSM_outlet_1 icon="poweroutlet"
 		Text item=HM_PSM_Frequency_1 icon="energy"
 		Text item=HM_PSM_Power_1 icon="energy"
