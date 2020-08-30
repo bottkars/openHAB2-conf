@@ -2,15 +2,15 @@
 Group Alexa "Alexa"
 
 Switch Espressomaschine  "Espressomaschine" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_200:192_168_1_1:087610147315:outlet" }
-Switch Napoleon "Barbecue" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:outlet" }
+# Switch Napoleon "Barbecue" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101881:outlet" }
 Switch Pondlights "Teichbeleuchtung" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570059762:outlet" }
-Switch Laser "Laser Terasse" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:outlet" }
+# Switch Laser "Laser Terasse" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570020580:outlet" }
 Switch Uvclean "UV Klärer" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570078695:outlet" }
 Switch Terrace "Terassenbeleuchtung" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570041195:outlet" }
 Switch Bach "Bachlaufpumpe" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570126712:outlet" }
 Switch Filterpumpe "Filterpumpe" (Alexa) ["Lighting"] { channel="avmfritz:FRITZ_DECT_210:192_168_1_1:116570101884:outlet" }
 //Homeatic Switches
-Switch Office "Zwift" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A6F:3#STATE" }
+Switch Office "Zwift" (Alexa) {alexa="PowerController.powerState"} { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A6F:3#STATE" }
 Switch Television "Fernseher Küche" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951A7D:3#STATE" }
 Switch Television1 "Fernseher Schlafzimmer" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D3C99613A0:3#STATE" }
 Switch PrinterDani "Drucker Dani" (Alexa) ["Lighting"] { channel="homematic:HMIP-PSM:3014F711A0001F98A99A3A1A:0001D709951AC9:3#STATE" }
