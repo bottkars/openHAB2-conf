@@ -1,0 +1,25 @@
+Group gardena_mower 
+Number Gardena_Mower_Battery_Level "Battery [%d %%]" (gardena_mower){channel="gardena:mower:4c7dff87:304db6e5-f231-4eec-a015-081ac80066d9:common#batteryLevel"}
+String Gardena_Mower_Status "Sileno Status [%s]" (gardena_mower) {channel="gardena:mower:4c7dff87:304db6e5-f231-4eec-a015-081ac80066d9:mower#state"}
+DateTime Gardena_Mower_Next_Start "Sileno nächster Start [%1$tA, %1$td.%1$tm.%1$tY %1$tH:%1$tM]" (gardena_mower) {channel="gardena:mower:4c7dff87:304db6e5-f231-4eec-a015-081ac80066d9:mower#activity_timestamp"}
+Switch Gardena_Mower_Park_Pause "Sileno parken und pausieren" <switch> (gardena_mower) {channel="gardena:mower:4c7dff87:304db6e5-f231-4eec-a015-081ac80066d9:mower_commands#park_until_further_notice"}
+Switch Gardena_Mower_Park "Sileno parken" <switch> (gardena_mower) {channel="gardena:mower:4c7dff87:304db6e5-f231-4eec-a015-081ac80066d9:mower_commands#park_until_next_task"}
+Switch Gardena_Mower_Manual_Mow "Sileno manueller Start" <switch> (gardena_mower) {channel="gardena:mower:4c7dff87:304db6e5-f231-4eec-a015-081ac80066d9:mower_commands#start_seconds_to_override"}
+Number:Time	Gardena_Mower_commands_Duration	"Mähdauer"	(gardena_mower)	{channel="gardena:mower:4c7dff87:304db6e5-f231-4eec-a015-081ac80066d9:mower_commands#commandDuration     "}
+
+//[%1$td/%1$tm %1$tH:%1$tM]
+Group Gardena_Power_Laser
+Switch Gardena_Power_Laser_Switch "Laser Terasse" (Gardena_Power_Laser) {channel="gardena:power:4c7dff87:2ed20428-df91-432a-97d1-71d624c3106e:powerSocket_commands#start_override"}
+String Gardena_Power_Laser_Status "Status Laser" (Gardena_Power_Laser) {channel="gardena:power:4c7dff87:2ed20428-df91-432a-97d1-71d624c3106e:powerSocket#state"}
+
+Group Gardena_Power_Napoleon
+Switch Gardena_Power_Napoleon_Switch "Napoleon Grill" (Gardena_Power_Napoleon) {channel="gardena:power:4c7dff87:0b00d343-8217-43d0-94af-eeced4b977c0:powerSocket_commands#start_override"}
+String Gardena_Power_Napoleon_Status "Status Napoleon" (Gardena_Power_Napoleon) {channel="gardena:power:4c7dff87:0b00d343-8217-43d0-94af-eeced4b977c0:powerSocket#state"}
+
+Group Gardena_Power_Filterpumpe
+Switch Gardena_Power_Filterpumpe_Switch "Filterpumpe" (Gardena_Power_Filterpumpe) {channel="gardena:power:4c7dff87:ae0f3abe-2e92-4a2d-b6a1-12dfe0e07966:powerSocket_commands#start_override"}
+String Gardena_Power_Filterpumpe_Status "Status Pumpe" (Gardena_Power_Filterpumpe) {channel="gardena:power:4c7dff87:ae0f3abe-2e92-4a2d-b6a1-12dfe0e07966:powerSocket#state"}
+// ae0f3abe-2e92-4a2d-b6a1-12dfe0e07966
+
+Group Gardena_Watering_Rasen
+Number Gardena_Watering_Rasen_Battery "Batterieladung" (Gardena_Watering_Rasen) {channel="gardena:water_control:4c7dff87:453e224e-fb4d-43ea-8070-988b7e84c7bb:common#batteryLevel"}

@@ -31,7 +31,7 @@ sitemap home label="Dani´s und Karsten´s Home" {
 		Text item=HM_WTH_10_actual icon="Temperature" label="WC Gäste"
 		Text item=HM_WTH_11_actual icon="Temperature" label="Ankleidezimmer"
 		Text item=HM_WTH_12_actual icon="Temperature" label="Badezimmer 2"
-		Text item=HM_WTH_13_actual icon="Temperature" label="Flur EG"
+		Text item=HM_WTH_13_actual icon="Temperature" label="Flur UG"
 		Text item=HM_WTH_14_actual icon="Temperature" label="Flur OG"
 		Text item=HM_WTH_15_actual icon="Temperature" label="Küche"
 		Text item=HM_WTH_16_actual icon="Temperature" label="Sportzimmer Keller"

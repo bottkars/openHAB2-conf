@@ -1,0 +1,29 @@
+sitemap gardena label="Gardena" {
+	Frame label="Sileno" {
+		Text item=Gardena_Mower_Battery_Level icon="lawnmower"
+        Text item=Gardena_Mower_Status icon="movecontrol"
+        Text item=Gardena_Mower_Next_Start icon="clock"
+        Switch item=Gardena_Mower_Park
+        Switch item=Gardena_Mower_Park_Pause icon="switch"
+        Switch item=Gardena_Mower_Manual_Mow icon="switch"
+        Text item=Gardena_Mower_commands_Duration
+	}
+	Frame label="Schalter Laser" {
+		Switch item=Gardena_Power_Napoleon_Switch icon="poweroutlet"
+        Text item=Gardena_Power_Napoleon_Status icon="switch"
+	}
+	Frame label="Schalter Filterpumpe" {
+		Switch item=Gardena_Power_Filterpumpe_Switch icon="poweroutlet"
+        Text item=Gardena_Power_Filterpumpe_Status icon="switch"
+    } 
+
+	Frame label="Schalter Napoleon" {
+		Switch item=Gardena_Power_Laser_Switch icon="poweroutlet"
+        Text item=Gardena_Power_Laser_Status icon="switch"
+	} 
+
+
+    Frame label="Bewässerung Rasen" {
+       Text item=Gardena_Watering_Rasen_Battery icon="battery"
+    }    
+}
